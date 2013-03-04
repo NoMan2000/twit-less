@@ -1,0 +1,58 @@
+/******************************
+Section 1:  Variables.
+Section 2:  Main CSS.
+Section 3:  Using a mixin.
+Section 4:  Parametric mix-ins
+*******************************/
+
+
+/***********************
+Section 1
+***********************/
+
+@baseColor: #535353;
+
+
+
+/**************************** 
+Section 2
+****************************/
+
+
+body{
+	background-color: darken(@baseColor, 50%);
+	color: white;
+}
+header{
+	background-color: lighten(@baseColor, 50%);
+	
+}
+.mixin{
+	.myMixin;
+}
+
+/*******************************
+Section 3
+********************************/
+
+
+.myMixin{
+	font-size: 18px;
+	background-color: darken(white, 50%);
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/********************************* 
+Section 4
+*********************************/
+
+.myRadius(@radius: 5px){
+	-webkit-border-radius: @radius;
+	-moz-border-radius: @radius;
+	border-radius: @radius;
+}
+
+#checkRadius {
+	.myRadius (10px);
+	// Overwriting the myRadius class using the mix-ins.
+}

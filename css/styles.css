@@ -1,0 +1,5 @@
+body{background-color:#000000;color:white;}
+header{background-color:#d3d3d3;}
+.mixin{font-size:18px;background-color:#808080;font-family:Arial,Helvetica,sans-serif;}
+.myMixin{font-size:18px;background-color:#808080;font-family:Arial,Helvetica,sans-serif;}
+#checkRadius{-webkit-border-radius:10px;-moz-border-radius:10px;border-radius:10px;}
